@@ -1,8 +1,12 @@
 App.xbf
 Styles\Custom.xbf
+Views\AdminConsole.xbf
 Views\Busy.xbf
+Views\Calendar.xbf
 Views\DetailPage.xbf
+Views\Info.xbf
 Views\MainPage.xbf
+Views\Register.xbf
 Views\SettingsPage.xbf
 Views\Shell.xbf
 Views\Splash.xbf
