@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>D23A023ED51AD18AF7BE4059E2B5938E1DB42C363A4EC60C8E35F3336213F4C6</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7BD1DBB8F83934F900F3A2AE7FFA76AF06C02D49D5D8416A53E054DD9C59BE15</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>4acf1087-4f38-4cbc-8abf-9bad642a8657_1.0.0.0_x86__js1ztew0xy634</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>4acf1087-4f38-4cbc-8abf-9bad642a8657_js1ztew0xy634!App</RegisteredUserModeAppID>
     <RegisteredPackageID>4acf1087-4f38-4cbc-8abf-9bad642a8657</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-29T09:43:54.544</Modified>
+      <Modified>2016-12-06T11:13:52.760</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.exe">
       <PackagePath>entrypoint\OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-11-29T09:43:49.771</Modified>
+      <Modified>2016-12-06T11:13:51.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jens\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -508,6 +508,68 @@
       <PackagePath>Template10Library.dll</PackagePath>
       <Modified>2016-10-17T09:42:00.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Bedrijfsmanagement.jpg">
+      <PackagePath>Assets\Bedrijfsmanagement.jpg</PackagePath>
+      <Modified>2016-12-06T08:00:33.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\campusAalstCoverBuiten.jpg">
+      <PackagePath>Assets\campusAalstCoverBuiten.jpg</PackagePath>
+      <Modified>2016-12-06T10:28:32.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\hogenAalstLogo.jpg">
+      <PackagePath>Assets\hogenAalstLogo.jpg</PackagePath>
+      <Modified>2016-12-06T10:18:34.231</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\hogentI.jpg">
+      <PackagePath>Assets\hogentI.jpg</PackagePath>
+      <Modified>2016-12-06T08:19:01.631</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\OfficeManagement.jpg">
+      <PackagePath>Assets\OfficeManagement.jpg</PackagePath>
+      <Modified>2016-12-06T08:00:49.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\ToegepasteInformatica.jpg">
+      <PackagePath>Assets\ToegepasteInformatica.jpg</PackagePath>
+      <Modified>2016-12-06T08:01:10.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\hAgent.png">
+      <PackagePath>Assets\hAgent.png</PackagePath>
+      <Modified>2016-12-06T11:08:12.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\hogentAalst.png">
+      <PackagePath>Assets\hogentAalst.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T11:02:00.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\hogentIcon.png">
+      <PackagePath>Assets\hogentIcon.png</PackagePath>
+      <Modified>2016-12-06T11:03:00.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T11:03:59.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T11:03:19.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T11:04:36.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T11:05:15.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-12-06T10:16:54.491</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Help.htm">
       <PackagePath>Help.htm</PackagePath>
       <Modified>2016-11-28T19:58:29.223</Modified>
@@ -516,43 +578,9 @@
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-28T19:58:28.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-11-28T19:58:21.744</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.750</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.753</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.755</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.757</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.796</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-28T19:58:21.798</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.xr.xml">
       <PackagePath>OpendeurdagApp.xr.xml</PackagePath>
-      <Modified>2016-11-29T09:41:25.000</Modified>
+      <Modified>2016-12-06T11:13:50.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -593,11 +621,11 @@
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-29T09:43:53.320</Modified>
+      <Modified>2016-12-06T11:13:51.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\OpendeurdagApp.exe">
       <PackagePath>OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-11-29T09:43:54.538</Modified>
+      <Modified>2016-12-06T11:13:52.755</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
