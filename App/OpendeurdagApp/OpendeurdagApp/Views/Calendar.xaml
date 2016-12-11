@@ -9,7 +9,7 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:controls="using:Template10.Controls">
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <RelativePanel x:Name="RelativeHome" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
@@ -53,8 +53,10 @@
 
         <StackPanel RelativePanel.Below="pageHeader">
 
+            <CalendarView Width="{Binding ActualWidth, ElementName=RelativeHome}" HorizontalAlignment="Left" Height="365" VerticalAlignment="Center" />
+            <TextBlock x:Name="Appointment1" Text=" afspraak 1"/> 
 
         </StackPanel>
-
+        
     </RelativePanel>
 </Page>

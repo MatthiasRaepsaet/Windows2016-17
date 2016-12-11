@@ -9,11 +9,11 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:controls="using:Template10.Controls">
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <RelativePanel x:ConnectionId='1' x:Name="RelativeHome" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='1' x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:ConnectionId='2' x:Name="VisualStateNarrow">
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
@@ -22,7 +22,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='3' x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
@@ -31,7 +31,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='4' x:Name="VisualStateWide">
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
@@ -43,7 +43,7 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <controls:PageHeader x:ConnectionId='5' x:Name="pageHeader"
+        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader"
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
@@ -53,9 +53,11 @@
 
         <StackPanel RelativePanel.Below="pageHeader">
 
+            <CalendarView Width="{Binding ActualWidth, ElementName=RelativeHome}" HorizontalAlignment="Left" Height="365" VerticalAlignment="Center" />
+            <TextBlock x:ConnectionId='7' x:Name="Appointment1" Text=" afspraak 1"/> 
 
         </StackPanel>
-
+        
     </RelativePanel>
 </Page>
 

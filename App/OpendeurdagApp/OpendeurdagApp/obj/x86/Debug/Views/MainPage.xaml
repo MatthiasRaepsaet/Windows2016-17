@@ -57,32 +57,46 @@
 
         </controls:PageHeader>
 
-        <StackPanel RelativePanel.Below="pageHeader">
+        <StackPanel RelativePanel.Below="pageHeader" Margin="10,5,10.4,-106">
 
             <TextBlock x:ConnectionId='7' x:Name="txbOpleidingen"
-                       Margin="16,16,-98.667,0"
-                       Text="Opleidingen" Height="20" />
+                       Text="Opleidingen" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" FontSize="30" />
 
-            <FlipView Height="189" Margin="0,0,0.333,0"  />
+            <FlipView x:ConnectionId='8' x:Name="flipOpleidingen"  MaxWidth="800" Height="189" Margin="0,0,0.333,0"  >
+                <FlipView.ItemTemplate>
+                    <DataTemplate>
+                        <Image x:Name="opleidingImages" Source="{Binding}" Stretch="Fill" />
+                    </DataTemplate>
+                </FlipView.ItemTemplate>
+            </FlipView>
 
-            <TextBlock x:ConnectionId='8' x:Name="tbxOpleidingenDiscription"
-                       Margin="16,16,10,0"
-                       Text="TEXT TEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXT " 
-                       TextWrapping="Wrap"/>
+            <TextBlock x:ConnectionId='9' x:Name="tbxOpleidingenDiscription"
+                       Margin="10,10,10,10"
+                       
+                       Text="Word ondernemer van je eigen succes. Wil je aan de slag in de bedrijfswereld?
+Durf je verantwoordelijkheden op jou nemen en heb je zin voor initiatief?
+Bekijk dan onze opleidingen die nauw aansluiten bij de bedrijfswereld!" 
+                       TextWrapping="Wrap" HorizontalAlignment="Center"/>
 
-            <TextBlock x:ConnectionId='9' x:Name="txbRondleiding"
-                       Margin="16,16,-98.667,0"
-                       Text="Opleidingen" Height="20"
+            <TextBlock x:ConnectionId='10' x:Name="txbRondleiding"
+                         Margin="119,10,107.4,10"
+                       Text="Rondleiding" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"
                        />
 
-            <FlipView Height="189" Margin="0,0,0.333,0"  />
+            <FlipView x:ConnectionId='11' x:Name="flipRondleiding" MaxWidth="800" Height="189" Margin="0,0,0.333,0"                          >
+                <FlipView.ItemTemplate>
+                    <DataTemplate>
+                        <Image x:Name="RondleidingImages" Source="{Binding}" Stretch="Fill" />
+                    </DataTemplate>
+                </FlipView.ItemTemplate>
+            </FlipView>
 
-            <TextBlock x:ConnectionId='10' x:Name="tbxRondleidingDiscription"
+            <TextBlock x:ConnectionId='12' x:Name="tbxRondleidingDiscription"
                        Margin="16,16,10,0"
-                       Text="tbxOpleidingenDiscriptiontbxOpleidingenDiscriptiontbxOpleidingenDiscriptiontbxOpleidingenDiscription" 
+                       Text="Wil je een korte rondleiding door onze campus zoek dan niet verder!" 
                        TextWrapping="Wrap"/>
 
-            <TextBlock x:ConnectionId='11' x:Name="stateTextBox"
+            <TextBlock x:ConnectionId='13' x:Name="stateTextBox"
                        Margin="16,16,0,0"
                        Text="Current Visual State" />
         </StackPanel>
