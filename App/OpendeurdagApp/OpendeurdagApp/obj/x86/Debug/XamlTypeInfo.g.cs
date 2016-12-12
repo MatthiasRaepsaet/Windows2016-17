@@ -156,7 +156,7 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[70];
+            _typeNameTable = new string[71];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -219,16 +219,17 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
             _typeNameTable[59] = "OpendeurdagApp.Views.Info";
             _typeNameTable[60] = "OpendeurdagApp.ViewModels.MainPageViewModel";
             _typeNameTable[61] = "OpendeurdagApp.Views.MainPage";
-            _typeNameTable[62] = "OpendeurdagApp.Views.Register";
-            _typeNameTable[63] = "OpendeurdagApp.ViewModels.SettingsPageViewModel";
-            _typeNameTable[64] = "OpendeurdagApp.ViewModels.SettingsPartViewModel";
-            _typeNameTable[65] = "OpendeurdagApp.ViewModels.AboutPartViewModel";
-            _typeNameTable[66] = "Template10.Converters.ValueWhenConverter";
-            _typeNameTable[67] = "OpendeurdagApp.Views.SettingsPage";
-            _typeNameTable[68] = "OpendeurdagApp.Views.Shell";
-            _typeNameTable[69] = "OpendeurdagApp.Views.Splash";
+            _typeNameTable[62] = "OpendeurdagApp.Views.Nieuws";
+            _typeNameTable[63] = "OpendeurdagApp.Views.Register";
+            _typeNameTable[64] = "OpendeurdagApp.ViewModels.SettingsPageViewModel";
+            _typeNameTable[65] = "OpendeurdagApp.ViewModels.SettingsPartViewModel";
+            _typeNameTable[66] = "OpendeurdagApp.ViewModels.AboutPartViewModel";
+            _typeNameTable[67] = "Template10.Converters.ValueWhenConverter";
+            _typeNameTable[68] = "OpendeurdagApp.Views.SettingsPage";
+            _typeNameTable[69] = "OpendeurdagApp.Views.Shell";
+            _typeNameTable[70] = "OpendeurdagApp.Views.Splash";
 
-            _typeTable = new global::System.Type[70];
+            _typeTable = new global::System.Type[71];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -291,14 +292,15 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
             _typeTable[59] = typeof(global::OpendeurdagApp.Views.Info);
             _typeTable[60] = typeof(global::OpendeurdagApp.ViewModels.MainPageViewModel);
             _typeTable[61] = typeof(global::OpendeurdagApp.Views.MainPage);
-            _typeTable[62] = typeof(global::OpendeurdagApp.Views.Register);
-            _typeTable[63] = typeof(global::OpendeurdagApp.ViewModels.SettingsPageViewModel);
-            _typeTable[64] = typeof(global::OpendeurdagApp.ViewModels.SettingsPartViewModel);
-            _typeTable[65] = typeof(global::OpendeurdagApp.ViewModels.AboutPartViewModel);
-            _typeTable[66] = typeof(global::Template10.Converters.ValueWhenConverter);
-            _typeTable[67] = typeof(global::OpendeurdagApp.Views.SettingsPage);
-            _typeTable[68] = typeof(global::OpendeurdagApp.Views.Shell);
-            _typeTable[69] = typeof(global::OpendeurdagApp.Views.Splash);
+            _typeTable[62] = typeof(global::OpendeurdagApp.Views.Nieuws);
+            _typeTable[63] = typeof(global::OpendeurdagApp.Views.Register);
+            _typeTable[64] = typeof(global::OpendeurdagApp.ViewModels.SettingsPageViewModel);
+            _typeTable[65] = typeof(global::OpendeurdagApp.ViewModels.SettingsPartViewModel);
+            _typeTable[66] = typeof(global::OpendeurdagApp.ViewModels.AboutPartViewModel);
+            _typeTable[67] = typeof(global::Template10.Converters.ValueWhenConverter);
+            _typeTable[68] = typeof(global::OpendeurdagApp.Views.SettingsPage);
+            _typeTable[69] = typeof(global::OpendeurdagApp.Views.Shell);
+            _typeTable[70] = typeof(global::OpendeurdagApp.Views.Splash);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -350,13 +352,14 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
         private object Activate_59_Info() { return new global::OpendeurdagApp.Views.Info(); }
         private object Activate_60_MainPageViewModel() { return new global::OpendeurdagApp.ViewModels.MainPageViewModel(); }
         private object Activate_61_MainPage() { return new global::OpendeurdagApp.Views.MainPage(); }
-        private object Activate_62_Register() { return new global::OpendeurdagApp.Views.Register(); }
-        private object Activate_63_SettingsPageViewModel() { return new global::OpendeurdagApp.ViewModels.SettingsPageViewModel(); }
-        private object Activate_64_SettingsPartViewModel() { return new global::OpendeurdagApp.ViewModels.SettingsPartViewModel(); }
-        private object Activate_65_AboutPartViewModel() { return new global::OpendeurdagApp.ViewModels.AboutPartViewModel(); }
-        private object Activate_66_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
-        private object Activate_67_SettingsPage() { return new global::OpendeurdagApp.Views.SettingsPage(); }
-        private object Activate_68_Shell() { return new global::OpendeurdagApp.Views.Shell(); }
+        private object Activate_62_Nieuws() { return new global::OpendeurdagApp.Views.Nieuws(); }
+        private object Activate_63_Register() { return new global::OpendeurdagApp.Views.Register(); }
+        private object Activate_64_SettingsPageViewModel() { return new global::OpendeurdagApp.ViewModels.SettingsPageViewModel(); }
+        private object Activate_65_SettingsPartViewModel() { return new global::OpendeurdagApp.ViewModels.SettingsPartViewModel(); }
+        private object Activate_66_AboutPartViewModel() { return new global::OpendeurdagApp.ViewModels.AboutPartViewModel(); }
+        private object Activate_67_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
+        private object Activate_68_SettingsPage() { return new global::OpendeurdagApp.Views.SettingsPage(); }
+        private object Activate_69_Shell() { return new global::OpendeurdagApp.Views.Shell(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -835,39 +838,46 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 62:   //  OpendeurdagApp.Views.Register
+            case 62:   //  OpendeurdagApp.Views.Nieuws
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_62_Register;
+                userType.Activator = Activate_62_Nieuws;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 63:   //  OpendeurdagApp.ViewModels.SettingsPageViewModel
+            case 63:   //  OpendeurdagApp.Views.Register
+                userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_63_Register;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 64:   //  OpendeurdagApp.ViewModels.SettingsPageViewModel
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_63_SettingsPageViewModel;
+                userType.Activator = Activate_64_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 64:   //  OpendeurdagApp.ViewModels.SettingsPartViewModel
+            case 65:   //  OpendeurdagApp.ViewModels.SettingsPartViewModel
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 65:   //  OpendeurdagApp.ViewModels.AboutPartViewModel
+            case 66:   //  OpendeurdagApp.ViewModels.AboutPartViewModel
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 66:   //  Template10.Converters.ValueWhenConverter
+            case 67:   //  Template10.Converters.ValueWhenConverter
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_66_ValueWhenConverter;
+                userType.Activator = Activate_67_ValueWhenConverter;
                 userType.AddMemberName("When");
                 userType.AddMemberName("Value");
                 userType.AddMemberName("Otherwise");
@@ -876,21 +886,21 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  OpendeurdagApp.Views.SettingsPage
+            case 68:   //  OpendeurdagApp.Views.SettingsPage
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_67_SettingsPage;
+                userType.Activator = Activate_68_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 68:   //  OpendeurdagApp.Views.Shell
+            case 69:   //  OpendeurdagApp.Views.Shell
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_68_Shell;
+                userType.Activator = Activate_69_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  OpendeurdagApp.Views.Splash
+            case 70:   //  OpendeurdagApp.Views.Splash
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
