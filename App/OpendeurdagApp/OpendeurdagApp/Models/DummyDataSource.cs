@@ -11,7 +11,16 @@ namespace OpendeurdagApp.Models
         public static List<News> News { get; set; } = new List<News>()
         {
             new News() {Title="Aankoop Hololens",Description="Er is eindelijk beslist om een hololens aan te kopen."}
-            
-    };
-}
+
+        };
+
+        public static List<Opleiding> Opleidingen { get; set; } = new List<Opleiding>()
+        {
+            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""},
+            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""},
+            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""}
+
+
+        };
+    }
 }

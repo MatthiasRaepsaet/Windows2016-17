@@ -1,1 +1,1 @@
-C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\Eindproject\App\OpendeurdagApp\OpendeurdagApp\OpendeurdagApp.csproj;x86
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\OpendeurdagApp.csproj;x86
