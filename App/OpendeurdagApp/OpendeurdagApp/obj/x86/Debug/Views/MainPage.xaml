@@ -11,45 +11,33 @@
       xmlns:vm="using:OpendeurdagApp.ViewModels"
       mc:Ignorable="d">
 
-    <Page.DataContext>
-        <vm:MainPageViewModel x:ConnectionId='1' x:Name="ViewModel" />
-    </Page.DataContext>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
+            <VisualStateGroup x:ConnectionId='1' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='2' x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
-                        <Setter Target="stateTextBox.Text" Value="Narrow Visual State" />
-                    </VisualState.Setters>
+                  
                 </VisualState>
-                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
-                        <Setter Target="stateTextBox.Text" Value="Normal Visual State" />
-                    </VisualState.Setters>
+                    
                 </VisualState>
-                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
-                        <Setter Target="stateTextBox.Text" Value="Wide Visual State" />
-                    </VisualState.Setters>
+                   
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader"
+        <controls:PageHeader x:ConnectionId='5' x:Name="pageHeader"
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
@@ -59,10 +47,10 @@
 
         <StackPanel RelativePanel.Below="pageHeader" Margin="10,5,10.4,-106">
 
-            <TextBlock x:ConnectionId='7' x:Name="txbOpleidingen"
+            <TextBlock x:ConnectionId='6' x:Name="txbOpleidingen"
                        Text="Opleidingen" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="#FF0080C9" />
 
-            <FlipView x:ConnectionId='8' x:Name="flipOpleidingen"  MaxWidth="800" Height="189" Margin="0,0,0.333,0"  >
+            <FlipView x:ConnectionId='7' x:Name="flipOpleidingen"  MaxWidth="800" Height="189" Margin="0,0,0.333,0"  >
                 <FlipView.ItemTemplate>
                     <DataTemplate>
                         <Image x:Name="opleidingImages" Source="{Binding}" Stretch="Fill" />
@@ -70,7 +58,7 @@
                 </FlipView.ItemTemplate>
             </FlipView>
 
-            <TextBlock x:ConnectionId='9' x:Name="tbxOpleidingenDiscription"
+            <TextBlock x:ConnectionId='8' x:Name="tbxOpleidingenDiscription"
                        Margin="10,10,10,10"
                        
                        Text="Word ondernemer van je eigen succes. Wil je aan de slag in de bedrijfswereld?
@@ -78,12 +66,12 @@ Durf je verantwoordelijkheden op jou nemen en heb je zin voor initiatief?
 Bekijk dan onze opleidingen die nauw aansluiten bij de bedrijfswereld!" 
                        TextWrapping="Wrap" HorizontalAlignment="Center"/>
 
-            <TextBlock x:ConnectionId='10' x:Name="txbRondleiding"
+            <TextBlock x:ConnectionId='9' x:Name="txbRondleiding"
                          Margin="119,10,107.4,10"
                        Text="Rondleiding" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FF0080C9"
                        />
 
-            <FlipView x:ConnectionId='11' x:Name="flipRondleiding" MaxWidth="800" Height="189" Margin="0,0,0.333,0"                          >
+            <FlipView x:ConnectionId='10' x:Name="flipRondleiding" MaxWidth="800" Height="189" Margin="0,0,0.333,0"                          >
                 <FlipView.ItemTemplate>
                     <DataTemplate>
                         <Image x:Name="RondleidingImages" Source="{Binding}" Stretch="Fill" />
@@ -91,7 +79,7 @@ Bekijk dan onze opleidingen die nauw aansluiten bij de bedrijfswereld!"
                 </FlipView.ItemTemplate>
             </FlipView>
 
-            <TextBlock x:ConnectionId='12' x:Name="tbxRondleidingDiscription"
+            <TextBlock x:ConnectionId='11' x:Name="tbxRondleidingDiscription"
                        Margin="16,16,10,0"
                        Text="Wil je een korte rondleiding door onze campus zoek dan niet verder!" 
                        TextWrapping="Wrap"/>

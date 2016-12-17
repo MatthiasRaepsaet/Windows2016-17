@@ -24,12 +24,13 @@ namespace OpendeurdagApp.Models
             set { opleidingName = value; RaisePropertyChanged(); }
         }
 
+
         private String opleidingDescription;
 
         public String OpleidingDescription
         {
-            get { return OpleidingDescription; }
-            set { OpleidingDescription = value; RaisePropertyChanged(); }
+            get { return opleidingDescription; }
+            set { opleidingDescription = value; }
         }
 
         private String opleidingImage;

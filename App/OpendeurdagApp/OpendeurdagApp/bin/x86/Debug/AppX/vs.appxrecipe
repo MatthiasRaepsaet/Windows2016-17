@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-17T15:53:55.061</Modified>
+      <Modified>2016-12-17T18:21:56.592</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.exe">
       <PackagePath>entrypoint\OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-17T15:53:47.815</Modified>
+      <Modified>2016-12-17T18:21:54.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jens\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -584,7 +584,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.xr.xml">
       <PackagePath>OpendeurdagApp.xr.xml</PackagePath>
-      <Modified>2016-12-17T15:43:03.859</Modified>
+      <Modified>2016-12-17T18:16:20.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -625,11 +625,11 @@
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-17T15:53:53.715</Modified>
+      <Modified>2016-12-17T18:21:55.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\OpendeurdagApp.exe">
       <PackagePath>OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-17T15:53:55.054</Modified>
+      <Modified>2016-12-17T18:21:56.587</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
