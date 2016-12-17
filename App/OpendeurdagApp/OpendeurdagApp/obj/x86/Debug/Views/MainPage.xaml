@@ -60,7 +60,7 @@
         <StackPanel RelativePanel.Below="pageHeader" Margin="10,5,10.4,-106">
 
             <TextBlock x:ConnectionId='7' x:Name="txbOpleidingen"
-                       Text="Opleidingen" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" FontSize="30" />
+                       Text="Opleidingen" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="#FF0080C9" />
 
             <FlipView x:ConnectionId='8' x:Name="flipOpleidingen"  MaxWidth="800" Height="189" Margin="0,0,0.333,0"  >
                 <FlipView.ItemTemplate>
@@ -80,7 +80,7 @@ Bekijk dan onze opleidingen die nauw aansluiten bij de bedrijfswereld!"
 
             <TextBlock x:ConnectionId='10' x:Name="txbRondleiding"
                          Margin="119,10,107.4,10"
-                       Text="Rondleiding" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"
+                       Text="Rondleiding" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FF0080C9"
                        />
 
             <FlipView x:ConnectionId='11' x:Name="flipRondleiding" MaxWidth="800" Height="189" Margin="0,0,0.333,0"                          >
@@ -96,9 +96,7 @@ Bekijk dan onze opleidingen die nauw aansluiten bij de bedrijfswereld!"
                        Text="Wil je een korte rondleiding door onze campus zoek dan niet verder!" 
                        TextWrapping="Wrap"/>
 
-            <TextBlock x:ConnectionId='13' x:Name="stateTextBox"
-                       Margin="16,16,0,0"
-                       Text="Current Visual State" />
+
         </StackPanel>
 
     </RelativePanel>

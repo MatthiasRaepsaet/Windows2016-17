@@ -539,7 +539,6 @@ C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps
 C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\Eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Nieuws.xbf
 C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\Eindproject\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Views\Nieuws.xbf
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Views\Nieuws.xbf
-D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\OpendeurdagApp.csprojResolveAssemblyReference.cache
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Nieuws.g.i.cs
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Nieuws.g.cs
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Nieuws.xaml
@@ -554,3 +553,6 @@ D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.xaml
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Opleidingen.xbf
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.xbf
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.dll
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.pdb
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\OpendeurdagApp.csprojResolveAssemblyReference.cache
