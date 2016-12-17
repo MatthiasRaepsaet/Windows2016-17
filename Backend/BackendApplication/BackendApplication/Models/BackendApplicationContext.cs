@@ -22,5 +22,7 @@ namespace BackendApplication.Models
         public System.Data.Entity.DbSet<BackendApplication.Models.Gebruiker> Gebruikers { get; set; }
 
         public System.Data.Entity.DbSet<BackendApplication.Models.Opleiding> Opleidings { get; set; }
+
+        public System.Data.Entity.DbSet<BackendApplication.Models.News> News { get; set; }
     }
 }
