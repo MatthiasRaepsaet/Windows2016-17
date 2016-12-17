@@ -9,18 +9,18 @@
     <RootPropertyPathName Name="Humidity" />
     <RootPropertyPathName Name="Clouds" />
     <RootPropertyPathName Name="Temperature" />
-    <RootPropertyPathName Name="AboutPartViewModel" />
-    <RootPropertyPathName Name="SettingsPartViewModel" />
     <RootPropertyPathName Name="News" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="OpleidingDiscription" />
     <RootPropertyPathName Name="OpleidingName" />
     <RootPropertyPathName Name="OpleidingImage" />
+    <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
     <RootPropertyPathName Name="DisplayName" />
     <RootPropertyPathName Name="Logo" />
+    <RootPropertyPathName Name="SettingsPartViewModel" />
     <RootPropertyPathName Name="BusyText" />
     <RootPropertyPathName Name="IsFullScreen" />
     <RootPropertyPathName Name="IsOn" />
@@ -71,7 +71,6 @@
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
-      <RootProperty Name="Target" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Template10.Controls.Resizer">
@@ -88,8 +87,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
-      <RootProperty Name="DataContext" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DataContext" />
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
@@ -212,7 +211,6 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Info" />
-    <RootType FullName="OpendeurdagApp.ViewModels.MainPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="Height" />
@@ -230,13 +228,14 @@
       <RootEvent Name="ImageOpened" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.MainPage" />
+    <RootType FullName="OpendeurdagApp.ViewModels.NieuwsViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
-      <RootProperty Name="DataContext" />
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
