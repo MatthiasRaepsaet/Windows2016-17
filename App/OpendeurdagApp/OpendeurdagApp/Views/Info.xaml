@@ -56,7 +56,52 @@
         </controls:PageHeader>
 
         <StackPanel RelativePanel.Below="pageHeader">
-        
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Adres: "/>
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="Arbeidstraat 14, 9300 Aalst "/>
+
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Telefoon: "/>
+                <TextBlock Grid.Column="1" Grid.Row="2" Text="09 243 38 00"/>
+
+                <TextBlock Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4" Text="OpeningsUren "/>
+                <TextBlock Grid.Column="0" Grid.Row="5" Text="Maandag: "/>
+                <TextBlock Grid.Column="1" Grid.Row="5" Text="07:00-18:00 "/>
+                <TextBlock Grid.Column="0" Grid.Row="6" Text="Dinsdag: "/>
+                <TextBlock Grid.Column="1" Grid.Row="6" Text="07:00-18:00 "/>
+                <TextBlock Grid.Column="0" Grid.Row="7" Text="Woensdag: "/>
+                <TextBlock Grid.Column="1" Grid.Row="7" Text="07:00-18:00 "/>
+                <TextBlock Grid.Column="0" Grid.Row="8" Text="Donderdag: "/>
+                <TextBlock Grid.Column="1" Grid.Row="8" Text="07:00-18:00 "/>
+                <TextBlock Grid.Column="0" Grid.Row="9" Text="Vrijdag: "/>
+                <TextBlock Grid.Column="1" Grid.Row="9" Text="07:00-18:00 "/>
+                <TextBlock Grid.Column="0" Grid.Row="10" Text="za-zo: "/>
+                <TextBlock Grid.Column="1" Grid.Row="10" Text="Gesloten"/>
+
+                
+                
+
+            </Grid>
             
             
         </StackPanel>
