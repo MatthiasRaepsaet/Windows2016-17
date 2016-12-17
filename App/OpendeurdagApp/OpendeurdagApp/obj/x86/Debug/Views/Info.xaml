@@ -55,8 +55,67 @@
 
         </controls:PageHeader>
 
-        <StackPanel RelativePanel.Below="pageHeader">
-        
+        <StackPanel RelativePanel.Below="pageHeader" RelativePanel.AlignHorizontalCenterWithPanel="True" >
+            <Grid Margin="0,20,0,0"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Adres: " FontSize="20" />
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="Arbeidstraat 14, 9300 Aalst " FontSize="20"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Telefoon: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="2" Text="09 243 38 00" FontSize="20"/>
+
+                <TextBlock Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4" Text="OpeningsUren " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="5" Text="Maandag: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="5" Text="07:00-18:00 " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="6" Text="Dinsdag: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="6" Text="07:00-18:00 " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="7" Text="Woensdag: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="7" Text="07:00-18:00 " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="8" Text="Donderdag: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="8" Text="07:00-18:00 " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="9" Text="Vrijdag: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="9" Text="07:00-18:00 " FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="10" Text="za-zo: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="10" Text="Gesloten" FontSize="20"/>
+
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="12" Text="Het Weer op dit ogenblik in Aalst:" FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="13" Text="Temperatuur: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="13" Text="{Binding Temperature}" FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="14" Text="Wolken:" FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="14" Text="{Binding Clouds}" FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="15" Text="vochtigheid:" FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="15" Text="{Binding Humidity}" FontSize="20"/>
+                <TextBlock Grid.Column="0" Grid.Row="16" Text="weer: " FontSize="20"/>
+                <TextBlock Grid.Column="1" Grid.Row="16" Text="{Binding WeatherKind}" FontSize="20"/>
+
+
+            </Grid>
             
             
         </StackPanel>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpendeurdagApp.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,8 @@ namespace OpendeurdagApp.Views
         public Info()
         {
             this.InitializeComponent();
+            Weather currentWeather = new Weather(); 
+            this.DataContext = currentWeather;
         }
     }
 }
