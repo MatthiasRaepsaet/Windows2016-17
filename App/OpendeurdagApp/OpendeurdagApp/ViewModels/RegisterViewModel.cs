@@ -17,9 +17,19 @@ namespace OpendeurdagApp.ViewModels
 {
     public class RegisterViewModel : ViewModelBase
     {
+      
 
         public ObservableCollection<Gebruiker> users { get; set; }
-        private Gebruiker user; 
+        private static Gebruiker currentUser; 
+
+        private Gebruiker user;
+
+        public Gebruiker User
+        {
+            get { return user; }
+            set { user = value; }
+        }
+
 
         public RegisterViewModel()
         {
@@ -27,12 +37,16 @@ namespace OpendeurdagApp.ViewModels
                 new Gebruiker("jens", "leirens", "jens.leirens@gmail.com","123", "bok", "23a", "dend", "9400", "0472", "4071", "Aalst", "TI"),
                  new Gebruiker("jorit", "vergalle", "jorit@gmail.com","1234", "bok", "23a", "dend", "9400", "0472", "4071", "Aalst", "TI")
             }; // todo insert user data here
-            users.ElementAt(0).IsAdmin = true; 
+            users.ElementAt(0).IsAdmin = true;
 
+            User = currentUser; 
         }
+      
 
         public void GotoRegisterPage() =>
            NavigationService.Navigate(typeof(Views.Registreer), 0);
+
+       
 
         public async void GoToAcountPage(string mail, string pass)
         {
@@ -41,13 +55,15 @@ namespace OpendeurdagApp.ViewModels
                 if (g.Email.Equals(mail) && g.Paswoord.Equals(pass))
                 {
                     user = g;
+                    currentUser = User; 
                 }
             }
 
             if(user != null)
             {
-                Shell.SetAdminAnabled(user.IsAdmin); 
-                NavigationService.Navigate(typeof(Views.Acount), user); // now go to account page and show user shit
+                Shell.SetAdminAnabled(User.IsAdmin); 
+
+                NavigationService.Navigate(typeof(Views.Acount)); // now go to account page and show user shit
 
             } else
             {
@@ -61,13 +77,18 @@ namespace OpendeurdagApp.ViewModels
 
         public void RegisterAndLogIn(Gebruiker user)
         {
-            // add user to DB 
+            // add user to DB  -----------------------------------------------------------
             users.Add(user);
             //log user in and go to account page
             GoToAcountPage(user.Email, user.Paswoord); 
 
         }
-
+        public void LogOut()
+        {
+            
+            Shell.SetAdminAnabled(false);
+            NavigationService.Navigate(typeof(Views.Register), 0);
+        }
     }
 
 }

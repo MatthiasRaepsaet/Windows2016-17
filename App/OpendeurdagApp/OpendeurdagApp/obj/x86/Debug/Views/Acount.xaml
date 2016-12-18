@@ -12,11 +12,15 @@
       xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:vm="using:OpendeurdagApp.ViewModels">
 
+    <Page.DataContext>
+        <vm:RegisterViewModel x:ConnectionId='1' x:Name="ViewModel" />
+    </Page.DataContext>
+    
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='1' x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:ConnectionId='2' x:Name="VisualStateNarrow">
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
@@ -25,7 +29,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='3' x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
@@ -34,7 +38,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='4' x:Name="VisualStateWide">
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
@@ -46,7 +50,7 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <controls:PageHeader x:ConnectionId='5' x:Name="pageHeader"
+        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader"
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
@@ -54,27 +58,93 @@
 
         </controls:PageHeader>
 
-        <StackPanel RelativePanel.Below="pageHeader">
-
-            <Grid>
+        <StackPanel RelativePanel.Below="pageHeader" RelativePanel.AlignHorizontalCenterWithPanel="True" >
+            
+            <Grid  Margin="0,20,0,0" DataContext="{Binding User}">
+                
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
                     <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
                     <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
                     <RowDefinition Height="40"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="200"/>
                     <ColumnDefinition Width="*"/>
+
                 </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="voornaam:"/>
+                <TextBox x:ConnectionId='7'   Grid.Column="1"  Grid.Row="0" Text="{Binding Voornaam ,Mode=TwoWay}" x:Name="voornaam" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="2" Text="achternaam:"/>
+                <TextBox x:ConnectionId='8'   Grid.Column="1"  Grid.Row="2"  Text="{Binding Achternaam  ,Mode=TwoWay}" x:Name="Achternaam" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="4" Text="E-mail:"/>
+                <TextBox x:ConnectionId='9'   Grid.Column="1"  Grid.Row="4" Text="{Binding Email ,Mode=TwoWay}" x:Name="Email" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="6" Text="Paswoord:"/>
+                <TextBlock   Grid.Column="1"  Grid.Row="6"  Text="***********"/>
+
+                <TextBlock Grid.Column="0"  Grid.Row="8" Text="straat"/>
+                <TextBox x:ConnectionId='10'   Grid.Column="1"  Grid.Row="8" Text="{Binding Straat ,Mode=TwoWay}" x:Name="Straat" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="10" Text="huisnummer:"/>
+                <TextBox x:ConnectionId='11'   Grid.Column="1"  Grid.Row="10"  Text="{Binding Huisnummer ,Mode=TwoWay}" x:Name="Huisnummer" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="12" Text="gemeente:"/>
+                <TextBox x:ConnectionId='12'   Grid.Column="1"  Grid.Row="12" Text="{Binding Gemeente ,Mode=TwoWay}" x:Name="Gemeente" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="14" Text="postcode:"/>
+                <TextBox x:ConnectionId='13'   Grid.Column="1"  Grid.Row="14"  Text="{Binding Postcode ,Mode=TwoWay}" x:Name="Postcode" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="16" Text="telefoonNummer:"/>
+                <TextBox x:ConnectionId='14'   Grid.Column="1"  Grid.Row="16"  Text="{Binding TelefoonNummer ,Mode=TwoWay}" x:Name="TelefoonNummer" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="18" Text="gsmNummer:"/>
+                <TextBox x:ConnectionId='15'   Grid.Column="1"  Grid.Row="18" Text="{Binding GsmNummer ,Mode=TwoWay}" x:Name="GsmNummer"  />
+
+                <TextBlock Grid.Column="0"  Grid.Row="20" Text="voorkeursCampus:"/>
+                <TextBox x:ConnectionId='16' Grid.Column="1"  Grid.Row="20" Text="{Binding VoorkeursCampus ,Mode=TwoWay}" x:Name="VoorkeursCampus" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="22" Text="voorkeursOpleiding:"/>
+                <TextBox x:ConnectionId='17' Grid.Column="1"  Grid.Row="22" Text="{Binding VoorkeursOpleiding ,Mode=TwoWay}" x:Name="VoorkeursOpleiding" />
+               
+                <Button x:ConnectionId='18' Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="24" Content="Log Uit"                      />
+
+
+
+
             </Grid>
 
-        </StackPanel>
+            </StackPanel>
 
     </RelativePanel>
 </Page>

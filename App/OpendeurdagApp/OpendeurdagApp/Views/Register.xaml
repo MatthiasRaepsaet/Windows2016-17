@@ -86,7 +86,7 @@
                         Click="{x:Bind ViewModel.GotoRegisterPage}"/>
 
                 <TextBlock Text="E-mail: " Grid.Column="0" Grid.Row="2" />
-                <TextBox Text="{Binding Email}" PlaceholderText="email@test.com" Grid.Column="1" Grid.Row="2" x:Name="email"/>
+                <TextBox Text="" PlaceholderText="email@test.com" Grid.Column="1" Grid.Row="2" x:Name="email"/>
                 <TextBlock Text="Paswoord: " Grid.Column="2" Grid.Row="2" />
                 <PasswordBox  PlaceholderText="******" Grid.Column="3" Grid.Row="2" x:Name="paswoord"/>
 

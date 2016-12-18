@@ -41,5 +41,13 @@ namespace OpendeurdagApp.Models
             set { opleidingImage = value; RaisePropertyChanged(); }
         }
 
+        private String stad;
+
+        public String Stad
+        {
+            get { return stad; }
+            set { stad = value; RaisePropertyChanged(); }
+        }
+
     }
 }
