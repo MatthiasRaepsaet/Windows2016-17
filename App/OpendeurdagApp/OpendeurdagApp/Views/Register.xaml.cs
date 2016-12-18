@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Template10.Services.NavigationService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,15 @@ namespace OpendeurdagApp.Views
         public Register()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            String mail = email.Text;
+            String pass = paswoord.Password; 
+            ViewModel.GotAcountPage(mail,pass);
+
         }
     }
 }

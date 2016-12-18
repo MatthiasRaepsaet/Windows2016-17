@@ -11,7 +11,7 @@
     <AssemblyName>OpendeurdagApp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
@@ -98,6 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\DummyDataSource.cs" />
+    <Compile Include="Models\Gebruiker.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Opleiding.cs" />
     <Compile Include="Models\Weather.cs" />
@@ -107,8 +108,12 @@
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\NieuwsViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBaseCostum.cs" />
+    <Compile Include="Views\Acount.xaml.cs">
+      <DependentUpon>Acount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AdminConsole.xaml.cs">
       <DependentUpon>AdminConsole.xaml</DependentUpon>
     </Compile>
@@ -135,6 +140,9 @@
     </Compile>
     <Compile Include="Views\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registreer.xaml.cs">
+      <DependentUpon>Registreer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Rondleiding.xaml.cs">
       <DependentUpon>Rondleiding.xaml</DependentUpon>
@@ -184,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
+    <Page Include="Views\Acount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AdminConsole.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -217,6 +229,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Registreer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -23,19 +23,19 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
-                    
+
                 </VisualState>
                 <VisualState x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
-                   
+
                 </VisualState>
                 <VisualState x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
-                  
+
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
@@ -57,19 +57,23 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                RelativePanel.AlignRightWithPanel="True"
                RelativePanel.Below="pageHeader">
 
-            <!--  General  -->
+            <!--  Algemeen  -->
             <PivotItem Header="Algemeen">
                 <ScrollViewer Margin="0,12,-12,0"
                               HorizontalContentAlignment="Left"
                               VerticalScrollBarVisibility="Auto">
                     <RelativePanel HorizontalAlignment="Left">
 
-                        <ListView ItemsSource="{Binding News}">
+                        <ListView ItemsSource="{Binding News}" >
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <StackPanel>
-                                        <TextBlock Text="{Binding Title}" />
-                                        <TextBlock Text="{Binding Description}"/>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
@@ -78,7 +82,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
                 </ScrollViewer>
             </PivotItem>
-            
+
             <!--  Gent  -->
             <PivotItem Header="Gent">
                 <ScrollViewer Margin="0,12,-12,0"
@@ -86,12 +90,16 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                               VerticalScrollBarVisibility="Auto">
                     <RelativePanel HorizontalAlignment="Left">
 
-                        <ListView ItemsSource="{Binding News}">
+                        <ListView ItemsSource="{Binding NewsGent}" >
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <StackPanel>
-                                        <TextBlock Text="{Binding Title}" />
-                                        <TextBlock Text="{Binding Description}"/>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
@@ -107,12 +115,16 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                               VerticalScrollBarVisibility="Auto">
                     <RelativePanel HorizontalAlignment="Left">
 
-                        <ListView ItemsSource="{Binding News}">
+                        <ListView ItemsSource="{Binding NewsAalst}" >
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <StackPanel>
-                                        <TextBlock Text="{Binding Title}" />
-                                        <TextBlock Text="{Binding Description}"/>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
@@ -122,7 +134,6 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 </ScrollViewer>
             </PivotItem>
         </Pivot>
-        
+
     </RelativePanel>
 </Page>
-

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>7BD1DBB8F83934F900F3A2AE7FFA76AF06C02D49D5D8416A53E054DD9C59BE15</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9C667DF6E618590348F1B147E9BBBBB7DCF5D693D2E3C23707C479351D70BFDB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>4acf1087-4f38-4cbc-8abf-9bad642a8657_1.0.0.0_x86__js1ztew0xy634</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>4acf1087-4f38-4cbc-8abf-9bad642a8657_js1ztew0xy634!App</RegisteredUserModeAppID>
     <RegisteredPackageID>4acf1087-4f38-4cbc-8abf-9bad642a8657</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-17T18:21:56.592</Modified>
+      <Modified>2016-12-18T09:41:28.509</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.exe">
       <PackagePath>entrypoint\OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-17T18:21:54.220</Modified>
+      <Modified>2016-12-18T01:13:42.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jens\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -584,7 +584,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.xr.xml">
       <PackagePath>OpendeurdagApp.xr.xml</PackagePath>
-      <Modified>2016-12-17T18:16:20.452</Modified>
+      <Modified>2016-12-18T01:13:42.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -625,11 +625,11 @@
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-17T18:21:55.940</Modified>
+      <Modified>2016-12-18T09:41:26.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\OpendeurdagApp.exe">
       <PackagePath>OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-17T18:21:56.587</Modified>
+      <Modified>2016-12-18T09:41:28.503</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -60,7 +60,7 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:AdminConsole">
+            <Controls:HamburgerButtonInfo x:Name="adminConsoleButton"  ClearHistory="True" PageType="views:AdminConsole" Visibility="Visible">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -85,6 +85,17 @@
                                Text="Inloggen" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:Acount" Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48"
+                                Height="48"
+                                Symbol="Contact" />
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Inloggen" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            
             <!--  settingspage button  -->
             <Controls:HamburgerButtonInfo x:Name="SettingsButton"
                                           PageParameter="0"
