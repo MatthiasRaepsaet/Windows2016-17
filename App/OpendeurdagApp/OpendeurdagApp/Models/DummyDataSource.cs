@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +20,13 @@ namespace OpendeurdagApp.Models
 
         public static List<Opleiding> Opleidingen { get; set; } = new List<Opleiding>()
         {
-            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""},
-            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""},
-            new Opleiding() {OpleidingName="", OpleidingDescription= "", OpleidingImage=""}
+            new Opleiding() {OpleidingName="Toegepaste Informatica", OpleidingDescription= "Hier staat de description van een opleiding. Redelijk groto vak dus moet wel wat gezever in staan am i rite boys????????", Stad= "Aalst",OpleidingImage=""},
+            new Opleiding() {OpleidingName="Office Management", OpleidingDescription= "Hier staat de description van een opleiding. Redelijk groto vak dus moet wel wat gezever in staan am i rite boys????????", Stad= "Aalst", OpleidingImage=""},
+            new Opleiding() {OpleidingName="Toegepaste Informatica", OpleidingDescription= "Hier staat de description van een opleiding. Redelijk groto vak dus moet wel wat gezever in staan am i rite boys????????", Stad= "Gent", OpleidingImage=""}
 
 
         };
     }
 }
+
+

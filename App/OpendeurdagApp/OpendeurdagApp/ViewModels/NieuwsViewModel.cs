@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,10 @@ namespace OpendeurdagApp.ViewModels
 
         public NieuwsViewModel()
         {
-            this.News = new ObservableCollection<News>(DummyDataSource.News);
-            this.NewsAalst = new ObservableCollection<News>(DummyDataSource.News.FindAll(s => s.Stad.Equals("Aalst")));
-            this.NewsGent = new ObservableCollection<News>(DummyDataSource.News.FindAll(s => s.Stad.Equals("Gent")));
+            this.News = new ObservableCollection<News>(BackendDataSource.News);
+            this.NewsAalst = new ObservableCollection<News>(BackendDataSource.News.FindAll(s => s.Stad.Equals("Aalst")));
+            this.NewsGent = new ObservableCollection<News>(BackendDataSource.News.FindAll(s => s.Stad.Equals("Gent")));
+            Debug.WriteLine("done");
         }
     }
 

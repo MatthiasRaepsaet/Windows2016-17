@@ -1,3 +1,4 @@
+using OpendeurdagApp.Models;
 using System;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
@@ -9,6 +10,8 @@ namespace OpendeurdagApp.Views
         public MainPage()
         {
             InitializeComponent();
+            BackendDataSource.LoadBackendData();
+
             NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
 
             BitmapImage hogentBanner = new BitmapImage(new Uri("ms-appx:///Assets/hogentI.jpg", UriKind.RelativeOrAbsolute));

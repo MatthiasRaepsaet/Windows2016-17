@@ -1,5 +1,7 @@
-﻿using System;
+﻿using OpendeurdagApp.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +27,29 @@ namespace OpendeurdagApp.Views
         public Acount()
         {
             this.InitializeComponent();
+
+            // SORRY 
+            // SORRY
+            // SORRY 
+            // KHAD ER GENOEG VAN 
+            // HARD CODED GVD ECHT 
+            // BLAME MAFKEN 
+            // FFS 
+            // FUCK DATA BINDING ECHT KHEB ER GENOEG VAN 
+
+            
+            //voornaam.Text = user.Voornaam;
+            //Achternaam.Text = user.Achternaam;
+            //Email.Text = user.Email; 
+
+
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.LogOut(); 
+        }
+
+       
     }
 }

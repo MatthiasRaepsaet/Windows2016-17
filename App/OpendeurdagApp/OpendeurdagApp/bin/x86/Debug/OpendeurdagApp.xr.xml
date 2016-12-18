@@ -4,6 +4,18 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="User" />
+    <RootPropertyPathName Name="VoorkeursOpleiding" />
+    <RootPropertyPathName Name="VoorkeursCampus" />
+    <RootPropertyPathName Name="GsmNummer" />
+    <RootPropertyPathName Name="TelefoonNummer" />
+    <RootPropertyPathName Name="Postcode" />
+    <RootPropertyPathName Name="Gemeente" />
+    <RootPropertyPathName Name="Huisnummer" />
+    <RootPropertyPathName Name="Straat" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="Achternaam" />
+    <RootPropertyPathName Name="Voornaam" />
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="WeatherKindG" />
     <RootPropertyPathName Name="HumidityG" />
@@ -19,10 +31,10 @@
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="NewsGent" />
     <RootPropertyPathName Name="News" />
-    <RootPropertyPathName Name="OpleidingDiscription" />
+    <RootPropertyPathName Name="OpleidingenAalst" />
+    <RootPropertyPathName Name="OpleidingDescription" />
     <RootPropertyPathName Name="OpleidingName" />
-    <RootPropertyPathName Name="OpleidingImage" />
-    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="OpleidingenGent" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
@@ -87,11 +99,12 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Background" />
     </RootType>
+    <RootType FullName="OpendeurdagApp.ViewModels.RegisterViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -105,10 +118,10 @@
       <RootMethod Name="SetAlignTopWithPanel" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
-      <RootMethod Name="GetAlignBottomWithPanel" />
-      <RootMethod Name="SetAlignBottomWithPanel" />
       <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
       <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="GetAlignBottomWithPanel" />
+      <RootMethod Name="SetAlignBottomWithPanel" />
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
       <RootMethod Name="GetAlignBottomWith" />
@@ -136,10 +149,11 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -148,11 +162,46 @@
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Converter" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="LineHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Command" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Acount" />
     <RootType FullName="OpendeurdagApp.Views.AdminConsole" />
@@ -175,21 +224,6 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="FontWeight" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="FontStyle" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="LineHeight" />
-    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
       <RootProperty Name="FallbackValue" />
@@ -200,12 +234,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Calendar" />
     <RootType FullName="OpendeurdagApp.ViewModels.DetailPageViewModel" />
@@ -254,29 +282,8 @@
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Nieuws" />
-    <RootType FullName="Windows.UI.Xaml.Shapes.Line">
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="X1" />
-      <RootProperty Name="Y1" />
-      <RootProperty Name="X2" />
-      <RootProperty Name="Y2" />
-    </RootType>
+    <RootType FullName="OpendeurdagApp.ViewModels.OpleidingenViewModel" />
     <RootType FullName="OpendeurdagApp.Views.Opleidingen" />
-    <RootType FullName="OpendeurdagApp.ViewModels.RegisterViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Command" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Text" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="PlaceholderText" />
     </RootType>
@@ -290,6 +297,7 @@
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Registreer" />
     <RootType FullName="OpendeurdagApp.Views.Rondleiding" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl" />
     <RootType FullName="OpendeurdagApp.Views.Routeplanner" />
     <RootType FullName="OpendeurdagApp.ViewModels.SettingsPageViewModel" />
     <RootType FullName="Template10.Converters.ValueWhenConverter">
