@@ -1,4 +1,4 @@
-<Page x:Class="OpendeurdagApp.Views.Shell"
+﻿<Page x:Class="OpendeurdagApp.Views.Shell"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:Controls="using:Template10.Controls"
@@ -12,7 +12,7 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       mc:Ignorable="d">
 
-    <Controls:HamburgerMenu x:Name="MyHamburgerMenu">
+    <Controls:HamburgerMenu x:ConnectionId='1' x:Name="MyHamburgerMenu">
 
         <Controls:HamburgerMenu.PrimaryButtons>
             <!--  mainpage button  -->
@@ -82,7 +82,7 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo x:Name="adminConsoleButton"  ClearHistory="True" PageType="views:AdminConsole" Visibility="Collapsed">
+            <Controls:HamburgerButtonInfo x:ConnectionId='2' x:Name="adminConsoleButton"  ClearHistory="True" PageType="views:AdminConsole" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -97,7 +97,7 @@
 
         <Controls:HamburgerMenu.SecondaryButtons>
             <!--  profile button  -->
-            <Controls:HamburgerButtonInfo x:Name="loginAccount" ClearHistory="True" PageType="views:Register" Visibility="Visible">
+            <Controls:HamburgerButtonInfo x:ConnectionId='3' x:Name="loginAccount" ClearHistory="True" PageType="views:Register" Visibility="Visible">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -107,7 +107,7 @@
                                Text="Inloggen" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-            <Controls:HamburgerButtonInfo x:Name="Account" ClearHistory="True" PageType="views:Acount" Visibility="Collapsed">
+            <Controls:HamburgerButtonInfo x:ConnectionId='4' x:Name="Account" ClearHistory="True" PageType="views:Acount" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -119,7 +119,7 @@
             </Controls:HamburgerButtonInfo>
             
             <!--  settingspage button  -->
-            <Controls:HamburgerButtonInfo x:Name="SettingsButton"
+            <Controls:HamburgerButtonInfo x:ConnectionId='5' x:Name="SettingsButton"
                                           PageParameter="0"
                                           PageType="views:SettingsPage">
                 <Controls:HamburgerButtonInfo.NavigationTransitionInfo>
@@ -139,4 +139,5 @@
     </Controls:HamburgerMenu>
 
 </Page>
+
 
