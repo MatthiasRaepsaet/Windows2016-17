@@ -972,6 +972,7 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 userType.AddMemberName("Achternaam");
                 userType.AddMemberName("Email");
                 userType.AddMemberName("IsAdmin");
+                userType.AddMemberName("Paswoord");
                 userType.AddMemberName("Straat");
                 userType.AddMemberName("Huisnummer");
                 userType.AddMemberName("Gemeente");
@@ -2087,142 +2088,152 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.IsAdmin = (global::System.Boolean)Value;
         }
-        private object get_100_Gebruiker_Straat(object instance)
+        private object get_100_Gebruiker_Paswoord(object instance)
+        {
+            var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
+            return that.Paswoord;
+        }
+        private void set_100_Gebruiker_Paswoord(object instance, object Value)
+        {
+            var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
+            that.Paswoord = (global::System.String)Value;
+        }
+        private object get_101_Gebruiker_Straat(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.Straat;
         }
-        private void set_100_Gebruiker_Straat(object instance, object Value)
+        private void set_101_Gebruiker_Straat(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.Straat = (global::System.String)Value;
         }
-        private object get_101_Gebruiker_Huisnummer(object instance)
+        private object get_102_Gebruiker_Huisnummer(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.Huisnummer;
         }
-        private void set_101_Gebruiker_Huisnummer(object instance, object Value)
+        private void set_102_Gebruiker_Huisnummer(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.Huisnummer = (global::System.String)Value;
         }
-        private object get_102_Gebruiker_Gemeente(object instance)
+        private object get_103_Gebruiker_Gemeente(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.Gemeente;
         }
-        private void set_102_Gebruiker_Gemeente(object instance, object Value)
+        private void set_103_Gebruiker_Gemeente(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.Gemeente = (global::System.String)Value;
         }
-        private object get_103_Gebruiker_Postcode(object instance)
+        private object get_104_Gebruiker_Postcode(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.Postcode;
         }
-        private void set_103_Gebruiker_Postcode(object instance, object Value)
+        private void set_104_Gebruiker_Postcode(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.Postcode = (global::System.String)Value;
         }
-        private object get_104_Gebruiker_TelefoonNummer(object instance)
+        private object get_105_Gebruiker_TelefoonNummer(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.TelefoonNummer;
         }
-        private void set_104_Gebruiker_TelefoonNummer(object instance, object Value)
+        private void set_105_Gebruiker_TelefoonNummer(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.TelefoonNummer = (global::System.String)Value;
         }
-        private object get_105_Gebruiker_GsmNummer(object instance)
+        private object get_106_Gebruiker_GsmNummer(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.GsmNummer;
         }
-        private void set_105_Gebruiker_GsmNummer(object instance, object Value)
+        private void set_106_Gebruiker_GsmNummer(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.GsmNummer = (global::System.String)Value;
         }
-        private object get_106_Gebruiker_VoorkeursCampus(object instance)
+        private object get_107_Gebruiker_VoorkeursCampus(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.VoorkeursCampus;
         }
-        private void set_106_Gebruiker_VoorkeursCampus(object instance, object Value)
+        private void set_107_Gebruiker_VoorkeursCampus(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.VoorkeursCampus = (global::System.String)Value;
         }
-        private object get_107_Gebruiker_VoorkeursOpleiding(object instance)
+        private object get_108_Gebruiker_VoorkeursOpleiding(object instance)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             return that.VoorkeursOpleiding;
         }
-        private void set_107_Gebruiker_VoorkeursOpleiding(object instance, object Value)
+        private void set_108_Gebruiker_VoorkeursOpleiding(object instance, object Value)
         {
             var that = (global::OpendeurdagApp.Models.Gebruiker)instance;
             that.VoorkeursOpleiding = (global::System.String)Value;
         }
-        private object get_108_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_109_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::OpendeurdagApp.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_109_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_110_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::OpendeurdagApp.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_110_ValueWhenConverter_When(object instance)
+        private object get_111_ValueWhenConverter_When(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.When;
         }
-        private void set_110_ValueWhenConverter_When(object instance, object Value)
+        private void set_111_ValueWhenConverter_When(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.When = (global::System.Object)Value;
         }
-        private object get_111_ValueWhenConverter_Value(object instance)
+        private object get_112_ValueWhenConverter_Value(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Value;
         }
-        private void set_111_ValueWhenConverter_Value(object instance, object Value)
+        private void set_112_ValueWhenConverter_Value(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_112_ValueWhenConverter_Otherwise(object instance)
+        private object get_113_ValueWhenConverter_Otherwise(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Otherwise;
         }
-        private void set_112_ValueWhenConverter_Otherwise(object instance, object Value)
+        private void set_113_ValueWhenConverter_Otherwise(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Otherwise = (global::System.Object)Value;
         }
-        private object get_113_ValueWhenConverter_OtherwiseValueBack(object instance)
+        private object get_114_ValueWhenConverter_OtherwiseValueBack(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.OtherwiseValueBack;
         }
-        private void set_113_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
+        private void set_114_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.OtherwiseValueBack = (global::System.Object)Value;
         }
-        private object get_114_ValueWhenConverter_Debug(object instance)
+        private object get_115_ValueWhenConverter_Debug(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Debug;
         }
-        private void set_114_ValueWhenConverter_Debug(object instance, object Value)
+        private void set_115_ValueWhenConverter_Debug(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Debug = (global::System.Boolean)Value;
@@ -2900,95 +2911,101 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 xamlMember.Getter = get_99_Gebruiker_IsAdmin;
                 xamlMember.Setter = set_99_Gebruiker_IsAdmin;
                 break;
+            case "OpendeurdagApp.Models.Gebruiker.Paswoord":
+                userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
+                xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Paswoord", "String");
+                xamlMember.Getter = get_100_Gebruiker_Paswoord;
+                xamlMember.Setter = set_100_Gebruiker_Paswoord;
+                break;
             case "OpendeurdagApp.Models.Gebruiker.Straat":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Straat", "String");
-                xamlMember.Getter = get_100_Gebruiker_Straat;
-                xamlMember.Setter = set_100_Gebruiker_Straat;
+                xamlMember.Getter = get_101_Gebruiker_Straat;
+                xamlMember.Setter = set_101_Gebruiker_Straat;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.Huisnummer":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Huisnummer", "String");
-                xamlMember.Getter = get_101_Gebruiker_Huisnummer;
-                xamlMember.Setter = set_101_Gebruiker_Huisnummer;
+                xamlMember.Getter = get_102_Gebruiker_Huisnummer;
+                xamlMember.Setter = set_102_Gebruiker_Huisnummer;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.Gemeente":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Gemeente", "String");
-                xamlMember.Getter = get_102_Gebruiker_Gemeente;
-                xamlMember.Setter = set_102_Gebruiker_Gemeente;
+                xamlMember.Getter = get_103_Gebruiker_Gemeente;
+                xamlMember.Setter = set_103_Gebruiker_Gemeente;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.Postcode":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Postcode", "String");
-                xamlMember.Getter = get_103_Gebruiker_Postcode;
-                xamlMember.Setter = set_103_Gebruiker_Postcode;
+                xamlMember.Getter = get_104_Gebruiker_Postcode;
+                xamlMember.Setter = set_104_Gebruiker_Postcode;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.TelefoonNummer":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "TelefoonNummer", "String");
-                xamlMember.Getter = get_104_Gebruiker_TelefoonNummer;
-                xamlMember.Setter = set_104_Gebruiker_TelefoonNummer;
+                xamlMember.Getter = get_105_Gebruiker_TelefoonNummer;
+                xamlMember.Setter = set_105_Gebruiker_TelefoonNummer;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.GsmNummer":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "GsmNummer", "String");
-                xamlMember.Getter = get_105_Gebruiker_GsmNummer;
-                xamlMember.Setter = set_105_Gebruiker_GsmNummer;
+                xamlMember.Getter = get_106_Gebruiker_GsmNummer;
+                xamlMember.Setter = set_106_Gebruiker_GsmNummer;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.VoorkeursCampus":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "VoorkeursCampus", "String");
-                xamlMember.Getter = get_106_Gebruiker_VoorkeursCampus;
-                xamlMember.Setter = set_106_Gebruiker_VoorkeursCampus;
+                xamlMember.Getter = get_107_Gebruiker_VoorkeursCampus;
+                xamlMember.Setter = set_107_Gebruiker_VoorkeursCampus;
                 break;
             case "OpendeurdagApp.Models.Gebruiker.VoorkeursOpleiding":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.Gebruiker");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "VoorkeursOpleiding", "String");
-                xamlMember.Getter = get_107_Gebruiker_VoorkeursOpleiding;
-                xamlMember.Setter = set_107_Gebruiker_VoorkeursOpleiding;
+                xamlMember.Getter = get_108_Gebruiker_VoorkeursOpleiding;
+                xamlMember.Setter = set_108_Gebruiker_VoorkeursOpleiding;
                 break;
             case "OpendeurdagApp.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "OpendeurdagApp.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_108_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_109_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OpendeurdagApp.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "OpendeurdagApp.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_109_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_110_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Converters.ValueWhenConverter.When":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "When", "Object");
-                xamlMember.Getter = get_110_ValueWhenConverter_When;
-                xamlMember.Setter = set_110_ValueWhenConverter_When;
+                xamlMember.Getter = get_111_ValueWhenConverter_When;
+                xamlMember.Setter = set_111_ValueWhenConverter_When;
                 break;
             case "Template10.Converters.ValueWhenConverter.Value":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Value", "Object");
-                xamlMember.Getter = get_111_ValueWhenConverter_Value;
-                xamlMember.Setter = set_111_ValueWhenConverter_Value;
+                xamlMember.Getter = get_112_ValueWhenConverter_Value;
+                xamlMember.Setter = set_112_ValueWhenConverter_Value;
                 break;
             case "Template10.Converters.ValueWhenConverter.Otherwise":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Otherwise", "Object");
-                xamlMember.Getter = get_112_ValueWhenConverter_Otherwise;
-                xamlMember.Setter = set_112_ValueWhenConverter_Otherwise;
+                xamlMember.Getter = get_113_ValueWhenConverter_Otherwise;
+                xamlMember.Setter = set_113_ValueWhenConverter_Otherwise;
                 break;
             case "Template10.Converters.ValueWhenConverter.OtherwiseValueBack":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "OtherwiseValueBack", "Object");
-                xamlMember.Getter = get_113_ValueWhenConverter_OtherwiseValueBack;
-                xamlMember.Setter = set_113_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Getter = get_114_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Setter = set_114_ValueWhenConverter_OtherwiseValueBack;
                 break;
             case "Template10.Converters.ValueWhenConverter.Debug":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Debug", "Boolean");
-                xamlMember.Getter = get_114_ValueWhenConverter_Debug;
-                xamlMember.Setter = set_114_ValueWhenConverter_Debug;
+                xamlMember.Getter = get_115_ValueWhenConverter_Debug;
+                xamlMember.Setter = set_115_ValueWhenConverter_Debug;
                 break;
             }
             return xamlMember;

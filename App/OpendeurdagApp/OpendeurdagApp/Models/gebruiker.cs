@@ -48,7 +48,7 @@ namespace OpendeurdagApp.Models
             set { isAdmin = value; }
         }
 
-
+        public String Paswoord { get; set; }
         public String Straat { get; set; }
         public String Huisnummer { get; set; }
         public String Gemeente { get; set; }
@@ -60,12 +60,13 @@ namespace OpendeurdagApp.Models
         public String VoorkeursCampus { get; set; }
         public String VoorkeursOpleiding { get; set; }
 
-        public Gebruiker(String voornaam, String achternaam, String email, String straat, String huisnummer,String gemeente, String postcode,String telefoonNummer,String gsmNummer,
+        public Gebruiker(String voornaam, String achternaam, String email, String paswoord, String straat, String huisnummer,String gemeente, String postcode,String telefoonNummer,String gsmNummer,
             String voorkeursCampus, String voorkeursOpleiding )
         {
             this.voornaam = voornaam;
             this.achternaam = achternaam;
             this.email = email;
+            Paswoord = paswoord; 
             Straat = straat;
             Huisnummer = huisnummer;
             Gemeente = gemeente;
