@@ -33,7 +33,7 @@ namespace OpendeurdagApp.Views
             
             String mail = email.Text;
             String pass = paswoord.Password; 
-            ViewModel.GotAcountPage(mail,pass);
+            ViewModel.GoToAcountPage(mail,pass);
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using OpendeurdagApp.Models;
+using OpendeurdagApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,42 +11,52 @@ using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.NavigationService;
+using Windows.UI.Popups;
 
 namespace OpendeurdagApp.ViewModels
 {
-    public class RegisterViewModel : ViewModelBase , INotifyPropertyChanged
+    public class RegisterViewModel : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void RaisePropertyChanged([CallerMemberName]string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
         public ObservableCollection<Gebruiker> users { get; set; }
         private Gebruiker user; 
+
         public RegisterViewModel()
         {
-            this.users = new ObservableCollection<Gebruiker>(); // todo insert user data here
+            this.users = new ObservableCollection<Gebruiker>() {
+                new Gebruiker("jens", "leirens", "jens.leirens@gmail.com","123", "bok", "23a", "dend", "9400", "0472", "4071", "Aalst", "TI"),
+                 new Gebruiker("jorit", "vergalle", "jorit@gmail.com","1234", "bok", "23a", "dend", "9400", "0472", "4071", "Aalst", "TI")
+            }; // todo insert user data here
+            users.ElementAt(0).IsAdmin = true; 
+
         }
 
         public void GotoRegisterPage() =>
            NavigationService.Navigate(typeof(Views.Registreer), 0);
 
-        public void GotAcountPage(string mail, string pass)
+        public async void GoToAcountPage(string mail, string pass)
         {
-            Debug.WriteLine(mail);
-            Debug.WriteLine(pass);
+            foreach(Gebruiker g in users)
+            {
+                if (g.Email.Equals(mail) && g.Paswoord.Equals(pass))
+                {
+                    user = g;
+                }
+            }
 
-            NavigationService.Navigate(typeof(Views.Acount), user);
-        }
+            if(user != null)
+            {
+                Shell.SetAdminAnabled(user.IsAdmin); 
+                NavigationService.Navigate(typeof(Views.Acount), user); // now go to account page and show user shit
 
-        public void GotAcountPage() =>
-           checkuser();
-
-        public void checkuser()
-        {
-            
+            } else
+            {
+                //tell user not found 404
+                MessageDialog md = new MessageDialog($"de gebruiker met email:{mail} werd niet gevonden controleer passwoord en email en probeer opnieuw ", "404");
+                await md.ShowAsync();
+            }
+           
+           
         }
 
     }

@@ -60,7 +60,7 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo x:Name="adminConsoleButton"  ClearHistory="True" PageType="views:AdminConsole" Visibility="Visible">
+            <Controls:HamburgerButtonInfo x:Name="adminConsoleButton"  ClearHistory="True" PageType="views:AdminConsole" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"

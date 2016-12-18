@@ -12,6 +12,10 @@
       xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:vm="using:OpendeurdagApp.ViewModels">
 
+    <Page.DataContext>
+        <vm:RegisterViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+    
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
@@ -54,24 +58,85 @@
 
         </controls:PageHeader>
 
-        <StackPanel RelativePanel.Below="pageHeader">
-
-            <Grid>
+        <StackPanel RelativePanel.Below="pageHeader" RelativePanel.AlignHorizontalCenterWithPanel="True" >
+            <Grid  Margin="0,20,0,0" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
                     <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
                     <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
                     <RowDefinition Height="40"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+                   
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="40"/>
                     <ColumnDefinition Width="*"/>
+
                 </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="voornaam:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" PlaceholderText="Jens" x:Name="voornaam" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="achternaam:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" PlaceholderText="Jens" x:Name="achternaam" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="E-mail:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" PlaceholderText="Jens" x:Name="email" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="Paswoord:"/>
+                <PasswordBox   Grid.Column="1"  Grid.Row="1" x:Name="paswoord" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="straat"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="straat" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="huisnummer:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="huisnummer" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="gemeente:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="gemeente" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="postcode:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="postcode" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="telefoonNummer:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="telefoonNummer" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="gsmNummer:"/>
+                <TextBox   Grid.Column="1"  Grid.Row="1" x:Name="gsmNummer" />
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="voorkeursCampus:"/>
+                <ComboBox Grid.Column="1"  Grid.Row="1" x:Name="voorkeursCampus">
+                    <ComboBoxItem IsSelected="True">Aalst</ComboBoxItem>
+                    <ComboBoxItem >Gent</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Grid.Column="0"  Grid.Row="0" Text="voorkeursOpleiding:"/>
+                <ComboBox Grid.Column="1"  Grid.Row="1" x:Name="voorkeursOpleiding">
+                    <ComboBoxItem IsSelected="True">Toegepaste Informatica</ComboBoxItem>
+                    <ComboBoxItem >BedrijfManegement</ComboBoxItem>
+                    <ComboBoxItem >Office Management</ComboBoxItem>
+                </ComboBox>
+
+
+
+
             </Grid>
 
         </StackPanel>
