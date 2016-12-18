@@ -556,3 +556,15 @@ D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.dll
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.pdb
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\OpendeurdagApp.csprojResolveAssemblyReference.cache
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Views\Opleidingen.xbf
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Views\Rondleiding.xbf
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.dll
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpenWeather.Net.pdb
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Opleidingen.g.i.cs
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Opleidingen.g.cs
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.g.i.cs
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.g.cs
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Opleidingen.xaml
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.xaml
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Opleidingen.xbf
+C:\Users\Jorit Vergalle\Documents\Toegepaste Informatica\Semester V\Windows apps\eindproject\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Rondleiding.xbf

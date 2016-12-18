@@ -1,0 +1,141 @@
+﻿<Page x:Class="OpendeurdagApp.Views.Nieuws"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Behaviors="using:Template10.Behaviors"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:converter="using:Template10.Converters"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:OpendeurdagApp.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:OpendeurdagApp.ViewModels">
+
+    <Page.DataContext>
+        <vm:NieuwsViewModel x:ConnectionId='1' x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    
+                </VisualState>
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                   
+                </VisualState>
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                  
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True"
+                             Text="Nieuws">
+
+        </controls:PageHeader>
+
+        <!--  content  -->
+        <Pivot x:ConnectionId='7' x:Name="MyPivot"
+               Grid.Row="1"
+               EntranceNavigationTransitionInfo.IsTargetElement="True"
+               RelativePanel.AlignBottomWithPanel="True"
+               RelativePanel.AlignLeftWithPanel="True"
+               RelativePanel.AlignRightWithPanel="True"
+               RelativePanel.Below="pageHeader">
+
+            <!--  Algemeen  -->
+            <PivotItem Header="Algemeen">
+                <ScrollViewer Margin="0,12,-12,0"
+                              HorizontalContentAlignment="Left"
+                              VerticalScrollBarVisibility="Auto">
+                    <RelativePanel HorizontalAlignment="Left">
+
+                        <ListView x:ConnectionId='10' ItemsSource="{Binding News}"                                             >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </RelativePanel>
+
+                </ScrollViewer>
+            </PivotItem>
+            
+            <!--  Gent  -->
+            <PivotItem Header="Gent">
+                <ScrollViewer Margin="0,12,-12,0"
+                              HorizontalContentAlignment="Left"
+                              VerticalScrollBarVisibility="Auto">
+                    <RelativePanel HorizontalAlignment="Left">
+
+                        <ListView x:ConnectionId='9' ItemsSource="{Binding NewsGent}"                                             >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </RelativePanel>
+                </ScrollViewer>
+            </PivotItem>
+
+            <!--  Aalst  -->
+            <PivotItem Header="Aalst">
+                <ScrollViewer Margin="0,12,-12,0"
+                              HorizontalContentAlignment="Left"
+                              VerticalScrollBarVisibility="Auto">
+                    <RelativePanel HorizontalAlignment="Left">
+
+                        <ListView x:ConnectionId='8' ItemsSource="{Binding NewsAalst}"                                             >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,0,0,10" Width="400">
+                                        <Grid>
+                                            <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,0,0,5" Text="{Binding Title}" FontSize="18"/>
+                                            <TextBlock Margin="30,0,0,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" FontStyle="Italic" Text="{Binding Stad}"/>
+                                        </Grid>
+
+                                        <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Description}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </RelativePanel>
+
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+        
+    </RelativePanel>
+</Page>
+
+

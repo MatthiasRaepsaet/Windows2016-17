@@ -862,6 +862,8 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 userType = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.Activator = Activate_61_NieuwsViewModel;
                 userType.AddMemberName("News");
+                userType.AddMemberName("NewsAalst");
+                userType.AddMemberName("NewsGent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -885,6 +887,7 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 userType.Activator = Activate_64_News;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Description");
+                userType.AddMemberName("Stad");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1919,62 +1922,92 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
             var that = (global::OpendeurdagApp.Models.News)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_92_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_92_News_Stad(object instance)
+        {
+            var that = (global::OpendeurdagApp.Models.News)instance;
+            return that.Stad;
+        }
+        private void set_92_News_Stad(object instance, object Value)
+        {
+            var that = (global::OpendeurdagApp.Models.News)instance;
+            that.Stad = (global::System.String)Value;
+        }
+        private object get_93_NieuwsViewModel_NewsAalst(object instance)
+        {
+            var that = (global::OpendeurdagApp.ViewModels.NieuwsViewModel)instance;
+            return that.NewsAalst;
+        }
+        private void set_93_NieuwsViewModel_NewsAalst(object instance, object Value)
+        {
+            var that = (global::OpendeurdagApp.ViewModels.NieuwsViewModel)instance;
+            that.NewsAalst = (global::System.Collections.ObjectModel.ObservableCollection<global::OpendeurdagApp.Models.News>)Value;
+        }
+        private object get_94_NieuwsViewModel_NewsGent(object instance)
+        {
+            var that = (global::OpendeurdagApp.ViewModels.NieuwsViewModel)instance;
+            return that.NewsGent;
+        }
+        private void set_94_NieuwsViewModel_NewsGent(object instance, object Value)
+        {
+            var that = (global::OpendeurdagApp.ViewModels.NieuwsViewModel)instance;
+            that.NewsGent = (global::System.Collections.ObjectModel.ObservableCollection<global::OpendeurdagApp.Models.News>)Value;
+        }
+        private object get_95_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::OpendeurdagApp.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_93_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_96_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::OpendeurdagApp.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_94_ValueWhenConverter_When(object instance)
+        private object get_97_ValueWhenConverter_When(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.When;
         }
-        private void set_94_ValueWhenConverter_When(object instance, object Value)
+        private void set_97_ValueWhenConverter_When(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.When = (global::System.Object)Value;
         }
-        private object get_95_ValueWhenConverter_Value(object instance)
+        private object get_98_ValueWhenConverter_Value(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Value;
         }
-        private void set_95_ValueWhenConverter_Value(object instance, object Value)
+        private void set_98_ValueWhenConverter_Value(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_96_ValueWhenConverter_Otherwise(object instance)
+        private object get_99_ValueWhenConverter_Otherwise(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Otherwise;
         }
-        private void set_96_ValueWhenConverter_Otherwise(object instance, object Value)
+        private void set_99_ValueWhenConverter_Otherwise(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Otherwise = (global::System.Object)Value;
         }
-        private object get_97_ValueWhenConverter_OtherwiseValueBack(object instance)
+        private object get_100_ValueWhenConverter_OtherwiseValueBack(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.OtherwiseValueBack;
         }
-        private void set_97_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
+        private void set_100_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.OtherwiseValueBack = (global::System.Object)Value;
         }
-        private object get_98_ValueWhenConverter_Debug(object instance)
+        private object get_101_ValueWhenConverter_Debug(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Debug;
         }
-        private void set_98_ValueWhenConverter_Debug(object instance, object Value)
+        private void set_101_ValueWhenConverter_Debug(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Debug = (global::System.Boolean)Value;
@@ -2604,47 +2637,65 @@ namespace OpendeurdagApp.OpendeurdagApp_XamlTypeInfo
                 xamlMember.Getter = get_91_News_Description;
                 xamlMember.Setter = set_91_News_Description;
                 break;
+            case "OpendeurdagApp.Models.News.Stad":
+                userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.Models.News");
+                xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Stad", "String");
+                xamlMember.Getter = get_92_News_Stad;
+                xamlMember.Setter = set_92_News_Stad;
+                break;
+            case "OpendeurdagApp.ViewModels.NieuwsViewModel.NewsAalst":
+                userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.NieuwsViewModel");
+                xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "NewsAalst", "System.Collections.ObjectModel.ObservableCollection`1<OpendeurdagApp.Models.News>");
+                xamlMember.Getter = get_93_NieuwsViewModel_NewsAalst;
+                xamlMember.Setter = set_93_NieuwsViewModel_NewsAalst;
+                break;
+            case "OpendeurdagApp.ViewModels.NieuwsViewModel.NewsGent":
+                userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.NieuwsViewModel");
+                xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "NewsGent", "System.Collections.ObjectModel.ObservableCollection`1<OpendeurdagApp.Models.News>");
+                xamlMember.Getter = get_94_NieuwsViewModel_NewsGent;
+                xamlMember.Setter = set_94_NieuwsViewModel_NewsGent;
+                break;
             case "OpendeurdagApp.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "OpendeurdagApp.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_92_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_95_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OpendeurdagApp.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OpendeurdagApp.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "OpendeurdagApp.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_93_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_96_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Converters.ValueWhenConverter.When":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "When", "Object");
-                xamlMember.Getter = get_94_ValueWhenConverter_When;
-                xamlMember.Setter = set_94_ValueWhenConverter_When;
+                xamlMember.Getter = get_97_ValueWhenConverter_When;
+                xamlMember.Setter = set_97_ValueWhenConverter_When;
                 break;
             case "Template10.Converters.ValueWhenConverter.Value":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Value", "Object");
-                xamlMember.Getter = get_95_ValueWhenConverter_Value;
-                xamlMember.Setter = set_95_ValueWhenConverter_Value;
+                xamlMember.Getter = get_98_ValueWhenConverter_Value;
+                xamlMember.Setter = set_98_ValueWhenConverter_Value;
                 break;
             case "Template10.Converters.ValueWhenConverter.Otherwise":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Otherwise", "Object");
-                xamlMember.Getter = get_96_ValueWhenConverter_Otherwise;
-                xamlMember.Setter = set_96_ValueWhenConverter_Otherwise;
+                xamlMember.Getter = get_99_ValueWhenConverter_Otherwise;
+                xamlMember.Setter = set_99_ValueWhenConverter_Otherwise;
                 break;
             case "Template10.Converters.ValueWhenConverter.OtherwiseValueBack":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "OtherwiseValueBack", "Object");
-                xamlMember.Getter = get_97_ValueWhenConverter_OtherwiseValueBack;
-                xamlMember.Setter = set_97_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Getter = get_100_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Setter = set_100_ValueWhenConverter_OtherwiseValueBack;
                 break;
             case "Template10.Converters.ValueWhenConverter.Debug":
                 userType = (global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::OpendeurdagApp.OpendeurdagApp_XamlTypeInfo.XamlMember(this, "Debug", "Boolean");
-                xamlMember.Getter = get_98_ValueWhenConverter_Debug;
-                xamlMember.Setter = set_98_ValueWhenConverter_Debug;
+                xamlMember.Getter = get_101_ValueWhenConverter_Debug;
+                xamlMember.Setter = set_101_ValueWhenConverter_Debug;
                 break;
             }
             return xamlMember;

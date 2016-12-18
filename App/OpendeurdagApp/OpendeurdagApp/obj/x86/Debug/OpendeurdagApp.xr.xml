@@ -9,9 +9,12 @@
     <RootPropertyPathName Name="Humidity" />
     <RootPropertyPathName Name="Clouds" />
     <RootPropertyPathName Name="Temperature" />
-    <RootPropertyPathName Name="News" />
+    <RootPropertyPathName Name="NewsAalst" />
     <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Stad" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="NewsGent" />
+    <RootPropertyPathName Name="News" />
     <RootPropertyPathName Name="OpleidingDiscription" />
     <RootPropertyPathName Name="OpleidingName" />
     <RootPropertyPathName Name="OpleidingImage" />
@@ -124,6 +127,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.AdminConsole" />
@@ -173,6 +177,7 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontStyle" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="LineHeight" />
     </RootType>
@@ -241,6 +246,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Nieuws" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Line">

@@ -16,5 +16,9 @@ namespace OpendeurdagApp.Views
             
         }
 
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
