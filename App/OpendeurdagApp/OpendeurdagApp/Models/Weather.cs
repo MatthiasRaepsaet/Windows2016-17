@@ -22,47 +22,86 @@ namespace OpendeurdagApp.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private double temperature;
+        private String temperatureA;
 
-        public double Temperature
+        public String TemperatureA
         {
-            get { return temperature; }
-            set { temperature = value; RaisePropertyChanged(); }
+            get { return temperatureA; }
+            set { temperatureA = value; RaisePropertyChanged(); }
         }
 
-        private String clouds;
+        private String cloudsA;
 
-        public String Clouds
+        public String CloudsA
         {
-            get { return clouds; }
-            set { clouds = value; RaisePropertyChanged(); }
+            get { return cloudsA; }
+            set { cloudsA = value; RaisePropertyChanged(); }
         }
 
-        private String humidity;
+        private String humidityA;
 
-        public String Humidity
+        public String HumidityA
         {
-            get { return humidity; }
-            set { humidity = value; RaisePropertyChanged(); }
+            get { return humidityA; }
+            set { humidityA = value; RaisePropertyChanged(); }
         }
 
-        private String weatherKind;
+        private String weatherKindA;
 
-        public String WeatherKind
+        public String WeatherKindA
         {
-            get { return weatherKind; }
-            set { weatherKind = value; RaisePropertyChanged(); }
+            get { return weatherKindA; }
+            set { weatherKindA = value; RaisePropertyChanged(); }
         }
 
+        private String temperatureG;
+
+        public String TemperatureG
+        {
+            get { return temperatureG; }
+            set { temperatureG = value; RaisePropertyChanged(); }
+        }
+
+        private String cloudsG;
+
+        public String CloudsG
+        {
+            get { return cloudsG; }
+            set { cloudsG = value; RaisePropertyChanged(); }
+        }
+
+        private String humidityG;
+
+        public String HumidityG
+        {
+            get { return humidityG; }
+            set { humidityG = value; RaisePropertyChanged(); }
+        }
+
+        private String weatherKindG;
+
+        public String WeatherKindG
+        {
+            get { return weatherKindG; }
+            set { weatherKindG = value; RaisePropertyChanged(); }
+        }
         public async void CalculateWeather()
         {
-            WeatherInfo weather = await new OpenWeatherClient("a91580e2d1ba4f9ac7f7e5d7a64af781").GetByCityNameAsync("Aalst");
-            weather.temperature.ToCelsius();
+            WeatherInfo weatherAalst = await new OpenWeatherClient("a91580e2d1ba4f9ac7f7e5d7a64af781").GetByCityNameAsync("Aalst");
+            weatherAalst.temperature.ToCelsius();
 
-            Temperature = weather.temperature.value; 
-            Clouds = weather.clouds.name;
-            Humidity = weather.humidity.value.ToString() + "%";
-            WeatherKind = weather.weather.value; 
+            TemperatureA = weatherAalst.temperature.value.ToString() + "°C"; 
+            CloudsA = weatherAalst.clouds.name;
+            HumidityA = weatherAalst.humidity.value.ToString() + "%";
+            WeatherKindA = weatherAalst.weather.value;
+
+            WeatherInfo weatherGent = await new OpenWeatherClient("a91580e2d1ba4f9ac7f7e5d7a64af781").GetByCityNameAsync("Gent");
+            weatherGent.temperature.ToCelsius();
+
+            TemperatureG = weatherGent.temperature.value.ToString() + "°C";
+            CloudsG = weatherGent.clouds.name;
+            HumidityG = weatherGent.humidity.value.ToString() + "%";
+            WeatherKindG = weatherGent.weather.value;
 
         }
 

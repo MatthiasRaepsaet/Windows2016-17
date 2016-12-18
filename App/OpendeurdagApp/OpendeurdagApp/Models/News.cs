@@ -32,5 +32,17 @@ namespace OpendeurdagApp.Models
             get { return description; }
             set { description = value; RaisePropertyChanged(); }
         }
+
+        private String stad;
+
+        public String Stad
+        {
+            get { return stad; }
+            set { stad = value; RaisePropertyChanged(); }
+        }
+
+        internal class FindAll
+        {
+        }
     }
 }

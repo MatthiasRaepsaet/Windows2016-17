@@ -1,5 +1,6 @@
 App.xbf
 Styles\Custom.xbf
+Views\Acount.xbf
 Views\AdminConsole.xbf
 Views\Busy.xbf
 Views\Calendar.xbf
@@ -9,6 +10,7 @@ Views\MainPage.xbf
 Views\Nieuws.xbf
 Views\Opleidingen.xbf
 Views\Register.xbf
+Views\Registreer.xbf
 Views\Rondleiding.xbf
 Views\SettingsPage.xbf
 Views\Shell.xbf
