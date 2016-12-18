@@ -16,6 +16,8 @@ namespace OpendeurdagApp.Views
         public static Shell Instance { get; set; }
         public static HamburgerMenu HamburgerMenu => Instance.MyHamburgerMenu;
         public static HamburgerButtonInfo adminconsole => Instance.adminConsoleButton;
+
+
         Services.SettingsServices.SettingsService _settings;
 
         public Shell()
@@ -40,7 +42,10 @@ namespace OpendeurdagApp.Views
 
         public static void SetAdminAnabled(bool isAdmin)
         {
-            if(isAdmin == true)
+            Instance.loginAccount.Visibility = Visibility.Collapsed;
+            Instance.Account.Visibility = Visibility.Visible; 
+
+            if (isAdmin == true)
             {
                 adminconsole.Visibility = Visibility.Visible;
             }

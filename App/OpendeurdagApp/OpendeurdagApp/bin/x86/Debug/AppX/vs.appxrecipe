@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-18T13:24:25.703</Modified>
+      <Modified>2016-12-18T14:39:18.500</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\OpendeurdagApp.exe">
       <PackagePath>entrypoint\OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-18T13:24:18.321</Modified>
+      <Modified>2016-12-18T14:39:16.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jens\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -625,11 +625,11 @@
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-18T13:24:23.265</Modified>
+      <Modified>2016-12-18T14:39:17.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Core\OpendeurdagApp.exe">
       <PackagePath>OpendeurdagApp.exe</PackagePath>
-      <Modified>2016-12-18T13:24:25.697</Modified>
+      <Modified>2016-12-18T14:39:18.495</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

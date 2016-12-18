@@ -75,7 +75,7 @@
 
         <Controls:HamburgerMenu.SecondaryButtons>
             <!--  profile button  -->
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:Register">
+            <Controls:HamburgerButtonInfo x:Name="loginAccount" ClearHistory="True" PageType="views:Register" Visibility="Visible">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -85,7 +85,7 @@
                                Text="Inloggen" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:Acount" Visibility="Collapsed">
+            <Controls:HamburgerButtonInfo x:Name="Account" ClearHistory="True" PageType="views:Acount" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
