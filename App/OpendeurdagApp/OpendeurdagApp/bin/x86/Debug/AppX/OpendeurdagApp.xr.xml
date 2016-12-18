@@ -290,6 +290,7 @@
     </RootType>
     <RootType FullName="OpendeurdagApp.Views.Registreer" />
     <RootType FullName="OpendeurdagApp.Views.Rondleiding" />
+    <RootType FullName="OpendeurdagApp.Views.Routeplanner" />
     <RootType FullName="OpendeurdagApp.ViewModels.SettingsPageViewModel" />
     <RootType FullName="Template10.Converters.ValueWhenConverter">
       <RootProperty Name="When" />

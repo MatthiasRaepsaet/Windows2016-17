@@ -59,6 +59,15 @@ namespace OpendeurdagApp.ViewModels
            
         }
 
+        public void RegisterAndLogIn(Gebruiker user)
+        {
+            // add user to DB 
+            users.Add(user);
+            //log user in and go to account page
+            GoToAcountPage(user.Email, user.Paswoord); 
+
+        }
+
     }
 
 }

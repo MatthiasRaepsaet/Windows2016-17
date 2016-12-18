@@ -13,14 +13,14 @@
       xmlns:vm="using:OpendeurdagApp.ViewModels">
 
     <Page.DataContext>
-        <vm:RegisterViewModel x:Name="ViewModel" />
+        <vm:RegisterViewModel x:ConnectionId='1' x:Name="ViewModel" />
     </Page.DataContext>
     
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:Name="VisualStateNarrow">
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
@@ -29,7 +29,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
@@ -38,7 +38,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="VisualStateWide">
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
@@ -50,7 +50,7 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <controls:PageHeader x:Name="pageHeader"
+        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader"
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
@@ -100,49 +100,49 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Column="0"  Grid.Row="0" Text="voornaam:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="0" PlaceholderText="Jens" x:Name="voornaam" />
+                <TextBox x:ConnectionId='7'   Grid.Column="1"  Grid.Row="0" PlaceholderText="Jens" x:Name="voornaam" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="2" Text="achternaam:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="2" PlaceholderText="Jens" x:Name="achternaam" />
+                <TextBox x:ConnectionId='8'   Grid.Column="1"  Grid.Row="2" PlaceholderText="Jens" x:Name="achternaam" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="4" Text="E-mail:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="4" PlaceholderText="Jens" x:Name="email" />
+                <TextBox x:ConnectionId='9'   Grid.Column="1"  Grid.Row="4" PlaceholderText="Jens" x:Name="email" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="6" Text="Paswoord:"/>
-                <PasswordBox   Grid.Column="1"  Grid.Row="6" PlaceholderText="*****" x:Name="paswoord" />
+                <PasswordBox x:ConnectionId='10'   Grid.Column="1"  Grid.Row="6" PlaceholderText="*****" x:Name="paswoord" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="8" Text="straat"/>
-                <TextBox   Grid.Column="1"  Grid.Row="8" PlaceholderText="bokkendries" x:Name="straat" />
+                <TextBox x:ConnectionId='11'   Grid.Column="1"  Grid.Row="8" PlaceholderText="bokkendries" x:Name="straat" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="10" Text="huisnummer:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="10" PlaceholderText="23A" x:Name="huisnummer" />
+                <TextBox x:ConnectionId='12'   Grid.Column="1"  Grid.Row="10" PlaceholderText="23A" x:Name="huisnummer" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="12" Text="gemeente:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="12" PlaceholderText="Ninove" x:Name="gemeente" />
+                <TextBox x:ConnectionId='13'   Grid.Column="1"  Grid.Row="12" PlaceholderText="Ninove" x:Name="gemeente" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="14" Text="postcode:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="14" PlaceholderText="9400" x:Name="postcode" />
+                <TextBox x:ConnectionId='14'   Grid.Column="1"  Grid.Row="14" PlaceholderText="9400" x:Name="postcode" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="16" Text="telefoonNummer:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="16" PlaceholderText="123456789" x:Name="telefoonNummer" />
+                <TextBox x:ConnectionId='15'   Grid.Column="1"  Grid.Row="16" PlaceholderText="123456789" x:Name="telefoonNummer" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="18" Text="gsmNummer:"/>
-                <TextBox   Grid.Column="1"  Grid.Row="18" PlaceholderText="1234567890" x:Name="gsmNummer" />
+                <TextBox x:ConnectionId='16'   Grid.Column="1"  Grid.Row="18" PlaceholderText="1234567890" x:Name="gsmNummer" />
 
                 <TextBlock Grid.Column="0"  Grid.Row="20" Text="voorkeursCampus:"/>
-                <ComboBox Grid.Column="1"  Grid.Row="20" x:Name="voorkeursCampus">
+                <ComboBox x:ConnectionId='17' Grid.Column="1"  Grid.Row="20" x:Name="voorkeursCampus">
                     <ComboBoxItem IsSelected="True">Aalst</ComboBoxItem>
                     <ComboBoxItem >Gent</ComboBoxItem>
                 </ComboBox>
 
                 <TextBlock Grid.Column="0"  Grid.Row="22" Text="voorkeursOpleiding:"/>
-                <ComboBox Grid.Column="1"  Grid.Row="22" x:Name="voorkeursOpleiding">
+                <ComboBox x:ConnectionId='18' Grid.Column="1"  Grid.Row="22" x:Name="voorkeursOpleiding">
                     <ComboBoxItem IsSelected="True">Toegepaste Informatica</ComboBoxItem>
                     <ComboBoxItem Content="BedrijfManegement" />
                     <ComboBoxItem >Office Management</ComboBoxItem>
                 </ComboBox>
                 
-                <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="24" Content="Registreer" Click="Registreren" />
+                <Button x:ConnectionId='19' Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="24" Content="Registreer"                     />
 
 
 
@@ -153,3 +153,4 @@
 
     </RelativePanel>
 </Page>
+

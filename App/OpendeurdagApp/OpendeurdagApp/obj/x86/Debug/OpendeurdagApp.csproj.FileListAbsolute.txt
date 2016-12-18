@@ -566,3 +566,8 @@ D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Template10Library.pri.xml
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\ProjectArchitectures.txt
 D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\OpendeurdagApp.csprojResolveAssemblyReference.cache
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\bin\x86\Debug\Views\Routeplanner.xbf
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Routeplanner.g.i.cs
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Routeplanner.g.cs
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Routeplanner.xaml
+D:\Dropbox\schoolJ\3 TI\Windows\Project\Github\App\OpendeurdagApp\OpendeurdagApp\obj\x86\Debug\Views\Routeplanner.xbf
