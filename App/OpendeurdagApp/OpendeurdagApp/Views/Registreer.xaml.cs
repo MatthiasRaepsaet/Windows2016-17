@@ -1,5 +1,7 @@
-﻿using System;
+﻿using OpendeurdagApp.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,9 +24,35 @@ namespace OpendeurdagApp.Views
     /// </summary>
     public sealed partial class Registreer : Page
     {
+        private Gebruiker user; 
         public Registreer()
         {
             this.InitializeComponent();
+        }
+
+        private void Registreren(object sender, RoutedEventArgs e)
+        {
+            String Voornaam, Achternaam, Email, Paswoord, Straat, Huisnummer, Gemeente, Postcode, TelefoonNummer, GsmNummer, VoorkeursCampus, VoorkeursOpleiding;
+
+            Voornaam = voornaam.Text;
+            Achternaam = achternaam.Text;
+            Email = email.Text;
+            Paswoord = paswoord.Password;
+            Straat = straat.Text;
+            Huisnummer = huisnummer.Text;
+            Gemeente = gemeente.Text;
+            Postcode = postcode.Text;
+            TelefoonNummer = telefoonNummer.Text;
+            GsmNummer = gsmNummer.Text;
+
+            ComboBoxItem campus = (ComboBoxItem) voorkeursCampus.SelectedItem;
+            ComboBoxItem opleiding = (ComboBoxItem)voorkeursOpleiding.SelectedItem;
+
+            VoorkeursCampus = campus.Content.ToString(); 
+            VoorkeursOpleiding = opleiding.Content.ToString();
+
+
+
         }
     }
 }

@@ -1,0 +1,102 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="OpendeurdagApp.Views.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Behaviors="using:Template10.Behaviors"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:OpendeurdagApp.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:OpendeurdagApp.ViewModels"
+      mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:RegisterViewModel x:ConnectionId='2' x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='3' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='5' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='6' x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <controls:PageHeader x:ConnectionId='7' x:Name="pageHeader"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True"
+                             Text="Acount">
+
+        </controls:PageHeader>
+
+        <StackPanel RelativePanel.Below="pageHeader" RelativePanel.AlignHorizontalCenterWithPanel="True" >
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="170"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Nog geen Acount? Geen probleem Registreer nu! "/>
+                <Button x:ConnectionId='8'  Grid.Row="0" Grid.Column="3" Content="Registreer"
+                                                                   />
+
+                <TextBlock Text="E-mail: " Grid.Column="0" Grid.Row="2" />
+                <TextBox x:ConnectionId='9' Text="{Binding Email}" PlaceholderText="email@test.com" Grid.Column="1" Grid.Row="2" x:Name="email"/>
+                <TextBlock Text="Paswoord: " Grid.Column="2" Grid.Row="2" />
+                <PasswordBox x:ConnectionId='10'  PlaceholderText="******" Grid.Column="3" Grid.Row="2" x:Name="paswoord"/>
+
+                <Button x:ConnectionId='11' Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="Log In " 
+                                              />
+
+            </Grid>
+
+        </StackPanel>
+
+    </RelativePanel>
+</Page>
+
